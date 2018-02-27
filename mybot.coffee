@@ -25,7 +25,7 @@ onLogin = () =>
   toFH = await Contact.find({name: '文件传输助手'})
   # Say Hello to FileHelper every 3 secs for 10 times
   for i in [1..10]
-    await sleep(3000)
+    await sleep(60*60*1000)
     await toFH.say("hello from yourself #{i} times!")
 
 sleep = (time) =>
